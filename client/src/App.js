@@ -12,7 +12,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const response = await fetch(`https://weather-backend-o983.onrender.com/api/weather?city=${city}`);
+      const response = await fetch(`https://weather-app-updated-2ww7.onrender.com/api/weather?city=${city}`);
       const data = await response.json();
       if (response.ok) {
         setWeather(data);
