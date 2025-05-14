@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #43cea2, #185a9d); /* Fancy teal to blue gradient */
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.input-group input {
+  padding: 12px 16px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  width: 60%;
+  min-width: 200px;
+}
+
+.input-group button {
+  padding: 12px 20px;
+  background: #ff6b6b;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s ease, background 0.3s ease;
+  border-radius: 0 10px 10px 0;
+}
+
+.input-group button:hover {
+  transform: scale(1.05);
+  background: #ff5252;
+}
+
+.weather-info {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  animation: fadeInUp 0.6s ease-out;
+  color: white;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.weather-info:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info img {
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
+}
+
+.weather-info h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.weather-info p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.weather-info p:first-of-type {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.error-message {
+  color: #ffb3b3;
+  font-weight: bold;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .App {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  .input-group input,
+  .input-group button {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+}
