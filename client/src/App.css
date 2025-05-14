@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #43cea2, #185a9d); /* Fancy teal to blue gradient */
+  background: linear-gradient(135deg, #43cea2, #185a9d);
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -108,7 +108,6 @@ body {
   }
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
   .App {
     margin: 20px;
